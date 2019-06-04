@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Garbagefinder/static/css/main.7f8db680.chunk.css",
+    "main.js": "/Garbagefinder/static/js/main.30772ec9.chunk.js",
+    "main.js.map": "/Garbagefinder/static/js/main.30772ec9.chunk.js.map",
+    "runtime~main.js": "/Garbagefinder/static/js/runtime~main.7797b18d.js",
+    "runtime~main.js.map": "/Garbagefinder/static/js/runtime~main.7797b18d.js.map",
+    "static/js/2.ce7461f8.chunk.js": "/Garbagefinder/static/js/2.ce7461f8.chunk.js",
+    "static/js/2.ce7461f8.chunk.js.map": "/Garbagefinder/static/js/2.ce7461f8.chunk.js.map",
+    "index.html": "/Garbagefinder/index.html",
+    "precache-manifest.2942b50339a60d3b72beb9ee9ae48ece.js": "/Garbagefinder/precache-manifest.2942b50339a60d3b72beb9ee9ae48ece.js",
+    "service-worker.js": "/Garbagefinder/service-worker.js",
+    "static/css/main.7f8db680.chunk.css.map": "/Garbagefinder/static/css/main.7f8db680.chunk.css.map"
+  }
+}
