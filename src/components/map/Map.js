@@ -209,6 +209,12 @@ class Map extends Component{
         }
       }
     }, 'waterway-label');
+    map.on('click', 'trees-point', function(e) {
+      new mapboxgl.Popup()
+        .setLngLat(e.features[0].geometry.coordinates)
+        .setHTML('<div class = "line"><b>Garbage type:</b>'+ e.features[0].properties.dbh +'</div>' +'<div class ="line"><b>Time detected: </b></div>')
+        .addTo(map);
+    });
 
   }
 

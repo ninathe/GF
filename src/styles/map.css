@@ -6,3 +6,24 @@
   .map{
     width: 100vw;
   }
+  .mapboxgl-popup-content{
+    width: 150px;
+    padding: 10px;
+    background: white;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+  }
+
+  .mapboxgl-popup-close-button{
+    display: none
+  }
+  .mapboxgl-popup-content-wrapper{
+    padding: 1%;
+    
+  }
+
+
+
+  
