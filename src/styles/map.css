@@ -16,9 +16,6 @@
     border-radius: 10px;
   }
 
-  .mapboxgl-popup-close-button{
-    display: none
-  }
   .mapboxgl-popup-content-wrapper{
     padding: 1%;
     
