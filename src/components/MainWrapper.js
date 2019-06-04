@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React, {Component} from 'react';
 import MapContainer from './map/Map'
+import Frontpage from './frontpage'
 
 const MapWrapperDiv = styled.div`
   display: flex;
@@ -9,25 +10,35 @@ const MapWrapperDiv = styled.div`
   align-items: stretch;
 `;
 
-class MapWrapper extends Component{
+class MainWrapper extends Component{
   constructor(props){
     super(props);
     this.state = {
-      receivedJson: this.props.receivedJson,
-      layers: [],
+      showMap: false,
     };
+  }
+
+  viewMap = () => {
+    this.setState({ showMap: true });
+  };
+  isLoggedIn=()=>{
+    return this.state.showMap
   }
 
   render() {
     return (
-      <div>
+      <React.Fragment>
+      {this.isLoggedIn() ? (
         <MapWrapperDiv>
           <MapContainer />
         </MapWrapperDiv> 
-      </div> 
-    );
-  }
+      
+      ) : (
+        <Frontpage clickHandler ={this.viewMap}/>
+      )}
+      </React.Fragment>
+    )}
 }
 
 
-export default MapWrapper;
+export default MainWrapper;
