@@ -1,8 +1,8 @@
 import withRoot from './modules/withRoot';
 // --- Post bootstrap -----
 import React from 'react';
-import ProductHero from './modules/views/ProductHero';
-import ProductValues from './modules/views/ProductValues';
+import Header from './modules/views/Header';
+import Steps from './modules/views/Steps';
 
 class Index extends React.Component {
   state = {
@@ -17,8 +17,8 @@ class Index extends React.Component {
     //GUI
     return (
       <React.Fragment>
-        <ProductHero clickHandler ={this.props.clickHandler}/>
-        <ProductValues />
+        <Header clickHandler ={this.props.clickHandler}/>
+        <Steps />
       </React.Fragment>
     );
   }

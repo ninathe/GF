@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { ArrowDownward } from '@material-ui/icons';
 
 const styles = theme => ({
   root: {
@@ -49,7 +50,7 @@ const styles = theme => ({
   },
 });
 
-function ProductHeroLayout(props) {
+function HeaderLayout(props) {
   const { backgroundClassName, children, classes } = props;
 
   return (
@@ -58,22 +59,17 @@ function ProductHeroLayout(props) {
         {children}
         <div className={classes.backdrop} />
         <div className={clsx(classes.background, backgroundClassName)} />
-        <img
-          className={classes.arrowDown}
-          src="/images/productHeroArrowDown.png"
-          height="16"
-          width="12"
-          alt="arrow down"
-        />
+        <ArrowDownward className = {classes.arrowDown}/>
+
       </Container>
     </section>
   );
 }
 
-ProductHeroLayout.propTypes = {
+HeaderLayout.propTypes = {
   backgroundClassName: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProductHeroLayout);
+export default withStyles(styles)(HeaderLayout);

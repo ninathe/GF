@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
-import ProductHeroLayout from './ProductHeroLayout';
+import HeaderLayout from './HeaderLayout';
 
 const backgroundImage =
-  'https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2018/2-plasticpollu.jpg';
+  'Images/plasticPollution.jpg';
 
 const styles = theme => ({
   background: {
@@ -29,11 +29,11 @@ const styles = theme => ({
   },
 });
 
-function ProductHero(props) {
+function Header(props) {
   const { classes } = props;
 
   return (
-    <ProductHeroLayout backgroundClassName={classes.background}>
+    <HeaderLayout backgroundClassName={classes.background}>
       <img style={{ display: 'none' }} src={backgroundImage} alt="" />
       <Typography color="inherit" align="center" variant="h2" marked="center">
         Garbage finder
@@ -51,12 +51,12 @@ function ProductHero(props) {
       >
         I'm in
       </Button>
-    </ProductHeroLayout>
+    </HeaderLayout>
   );
 }
 
-ProductHero.propTypes = {
+Header.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProductHero);
+export default withStyles(styles)(Header);
